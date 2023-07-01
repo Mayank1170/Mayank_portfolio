@@ -47,7 +47,7 @@ export const Banner = () => {
     }
   }
   const LetsConnect = () => {
-    window.open('https://twitter.com/0xMayank', '_blank');
+    window.open('https://twitter.com/_0xMayank', '_blank');
   };
 
   return (
