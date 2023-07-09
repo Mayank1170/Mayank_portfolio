@@ -1,31 +1,31 @@
 import meter1 from "../assets/img/meter1.svg";
 import meter2 from "../assets/img/meter2.svg";
 import meter3 from "../assets/img/meter3.svg";
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 import arrow1 from "../assets/img/arrow1.svg";
 import arrow2 from "../assets/img/arrow2.svg";
-import colorSharp from "../assets/img/color-sharp.png"
+import colorSharp from "../assets/img/color-sharp.png";
 
 export const Skills = () => {
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
-      items: 5
+      items: 5,
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 3
+      items: 3,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 2
+      items: 2,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
-      items: 1
-    }
+      items: 1,
+    },
   };
 
   return (
@@ -34,35 +34,60 @@ export const Skills = () => {
         <div className="row">
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
-              <h2>Languages and Frameworks</h2>
-              <p>Here are the some of the Languages and Frameworks I used to test my skills!<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
-              <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-                <div className="item">
-                  <img src={meter1} alt="Image" />
-                  <h5>Tailwind CSS</h5>
-                </div>
-                <div className="item">
-                  <img src={meter1} alt="Image" />
-                  <h5>Javascript</h5>
-                </div>
-                <div className="item">
-                  <img src={meter2} alt="Image" />
-                  <h5>React Js</h5>
-                </div>
-                <div className="item">
-                  <img src={meter3} alt="Image" />
-                  <h5>Ui/Ux</h5>
-                </div>
-                <div className="item">
-                  <img src={meter1} alt="Image" />
-                  <h5>NextJS</h5>
-                </div>
-              </Carousel>
+              <h1>Here's what i do </h1>
+              <ul>
+                <p>Frontend Development:</p>
+                <li>
+                  Proficient in React.js, JavaScript, HTML, CSS, Next.js,
+                  TypeScript, and Tailwind CSS.
+                </li>
+                <li>
+                  Extensive experience in developing dynamic and responsive user
+                  interfaces.
+                </li>
+                <li>
+                  Strong focus on writing clean and modular code to ensure
+                  maintainability and scalability.
+                </li>
+              </ul>
+              <ul>
+                <p>UI/UX Design:</p>
+                <li>
+                  {" "}
+                  Skilled in creating visually appealing and user-friendly
+                  interfaces.
+                </li>
+                <li>
+                  {" "}
+                  Knowledgeable in user-centered design principles and best
+                  practices.
+                </li>
+                <li>
+                  {" "}
+                  Ability to translate complex concepts into intuitive designs
+                  that enhance user experience.
+                </li>
+              </ul>
+              <ul>
+                <p>Web3 and Blockchain:</p>
+                <li>
+                  {" "}
+                  Currently exploring Web3 technology and blockchain
+                  development.
+                </li>
+                <li>
+                  Experience working on blockchain-based projects in
+                  collaboration with friends.
+                </li>
+                <li>
+                  Familiarity with the principles of decentralized applications
+                  (dApps) and smart contracts.
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-      <img className="background-image-left" src={colorSharp} alt="Image" />
     </section>
-  )
-}
+  );
+};
